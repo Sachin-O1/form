@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Data</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input {
+			padding: 10px;
+			margin-bottom: 10px;
+			width: 300px;
+			font-size: 16px;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		button:disabled {
+			background-color: gray;
+			cursor: not-allowed;
+		}
+	</style>
+</head>
+<body>
+	<form id="myForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<button type="submit" id="submitBtn" disabled>Save</button>
+	</form>
+
+	<script src="app.js"></script>
+</body>
+</html>
